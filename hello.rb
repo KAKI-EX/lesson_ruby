@@ -1,23 +1,16 @@
-users = {
-  name: "Takuya",
-  height: 175,
-  weight: 60,
-  gender: "男"
-  }
-  
-  # ハッシュを出力する
-  p users
-  puts "----------"
-  
-  # usersハッシュに:telで新たにオブジェクトを追加する
-  users[:tel] = "0801234567"
-  
-  # ハッシュを出力する
-  p users
-  puts "----------"
-  
-  # ハッシュの要素を削除する
-  users.delete(:weight)
-  
-  # ハッシュを出力する
-  p users
+ # ローカル変数を定義しています
+ hello_local = "ローカル変数に文字列を格納しています"
+ 
+ # グローバル変数を定義しています
+ $hello_global = "グローバル変数に文字列を格納しています"
+ 
+ # 別のファイルを読み込みます
+ require_relative "variableB"
+ 
+ puts "ローカル変数"
+ puts hello_local
+ 
+ puts "--------------------"
+ 
+ puts "グローバル変数"
+ puts $hello_global
